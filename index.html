@@ -4,18 +4,21 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">example comp module topics:</h1>
+  <div class="col-md-6">
+    <h1 class="page-heading">example comp module topics:</h1>
 
-  <ul class="post-list">
-    {% for comp in site.comp %}
-    <li>
-        <h2>
-          <a class="post-link" href="{{ comp.url | prepend: site.baseurl }}">{{ comp.title }}</a>
-        </h2>
-    {% endfor %}
-    </li>
-  </ul>
+    <ul class="post-list">
+      {% for comp in site.comp %}
+      <li>
+          <h2>
+            <a class="post-link" href="{{ comp.url | prepend: site.baseurl }}">{{ comp.title }}</a>
+          </h2>
+      {% endfor %}
+      </li>
+    </ul>
+  </div>
 
+<div class="col-md-6">
   <h1 class="page-heading">example math module topics</h1>
 
   <ul class="post-list">
@@ -27,6 +30,8 @@ layout: default
     {% endfor %}
     </li>
   </ul>
+
+</div>
 
 
   <h1 class="page-heading">Posts</h1>

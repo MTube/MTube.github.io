@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+---
 
-  {% include head.html %}
+{% include header.html %}
 
-  <body>
+  <div class="page-content">
+      {{ content }}
+  </div>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="jquery.min.js"></script>
-</html>
+{% include footer.html %}
