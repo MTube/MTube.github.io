@@ -4,6 +4,31 @@ layout: default
 
 <div class="home">
 
+  <h1 class="page-heading">example comp module topics:</h1>
+
+  <ul class="post-list">
+    {% for comp in site.comp %}
+    <li>
+        <h2>
+          <a class="post-link" href="{{ comp.url | prepend: site.baseurl }}">{{ comp.title }}</a>
+        </h2>
+    {% endfor %}
+    </li>
+  </ul>
+
+  <h1 class="page-heading">example math module topics</h1>
+
+  <ul class="post-list">
+    {% for math in site.math %}
+    <li>
+        <h2>
+          <a class="post-link" href="{{ math.url | prepend: site.baseurl }}">{{ math.title }}</a>
+        </h2>
+    {% endfor %}
+    </li>
+  </ul>
+
+
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">

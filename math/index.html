@@ -1,0 +1,19 @@
+---
+layout: page
+title: MATH
+permalink: /math/
+navigation: true
+---
+
+<h1 class="page-heading">math</h1>
+
+<h2>Content</h2>
+  <ul class="post-list">
+    {% for math in site.math %}
+    <li>
+        <h2>
+          <a class="post-link" href="{{ math.url | prepend: site.baseurl }}">{{ math.title }}</a>
+        </h2>
+    {% endfor %}
+    </li>
+  </ul>
