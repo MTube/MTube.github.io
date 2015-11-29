@@ -1,9 +1,14 @@
 # MTube
-- organised by user
+- an example user profile
 
 ## how it works
 - static pages for profile and upload are in the root folder. 
 - home pages for each course/module which have topics as a series. have 2 modules pre-loaded, so let's just populate those.
+
+## how to change the site title and default layouts
+- go to `_config.yml` and you can see the site settings, it's basically in YAML markup, which is just another form of markup [DOCS](http://jekyllrb.com/docs/configuration/), you can set global site variables here
+- there are layouts that you can choose from in the `_layouts` folder, this is pretty straightforward and to make sure they all share the same `head`, `footer` and `header` HTML content, those are stored (and can be edited in the files) in `_includes`
+- CSS is written using SASS, that can be installed using ruby gems, but you don't really need it as jekyll builds it for you (i think). [basic sass is here](http://sass-lang.com/guide) - it's like CSS but with variables and more awesome basically, and it's not too different
 
 ## course home pages
 Take the comp module for example
