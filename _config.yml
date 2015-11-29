@@ -8,6 +8,7 @@ twitter_username: MTube
 github_username:  MTube
 
 # Build settings
+# highlighter: redcarpet
 markdown: kramdown
 
 collections:

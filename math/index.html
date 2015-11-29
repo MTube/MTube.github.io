@@ -1,19 +1,76 @@
 ---
-layout: page
-title: MATH
+layout: courses
+title: MATH2201
 permalink: /math/
 navigation: true
 ---
 
-<h1 class="page-heading">math</h1>
+<h2>About this module</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.</p>
 
-<h2>Content</h2>
-  <ul class="post-list">
-    {% for math in site.math %}
-    <li>
-        <h2>
-          <a class="post-link" href="{{ math.url | prepend: site.baseurl }}">{{ math.title }}</a>
-        </h2>
-    {% endfor %}
-    </li>
-  </ul>
+<div class="col-md-6">
+	<h3>Topics</h3>
+	  <ul class="post-list">
+	    {% for math in site.math %}
+	    <li>
+	        <h2>
+	          <a class="post-link" href="{{ math.url | prepend: site.baseurl }}">{{ math.title }}</a>
+	        </h2>
+	    {% endfor %}
+	    </li>
+	  </ul>
+  	<h3>Trending</h3>
+  		<ul>
+  			<li>
+  				<h4><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><a href="#"> Explaining Orthogonality</a> by <span class=" glyphicon glyphicon-user" aria-hidden="true"></span> <a href="#">Shanice</a></h4>
+  			</li>
+  			<li>
+  				<h4><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><a href="#"> Notes 12/10/15</a> by <span class=" glyphicon glyphicon-user" aria-hidden="true"></span> <a href="#">Mark</a></h4>
+  			</li>
+  			<li>
+  				<h4><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><a href="#">Explaining Orthogonality</a> by <span class=" glyphicon glyphicon-user" aria-hidden="true"></span><a href="#">Shanice</a></h4>
+  			</li>
+  			<li>
+  				<h4><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><a href="#">Notes 12/10/15</a> by <span class=" glyphicon glyphicon-user" aria-hidden="true"></span><a href="#">Mark</a></h4>
+  			</li>
+  		</ul>
+</div>
+
+<div class="col-md-6">
+	<div id="videos">
+		<h3>Recently Uploaded</h3>
+		<div class="col-md-4">
+			<img src="{{ baseurl }}/play.png">
+		</div>
+		<div class="col-md-4">
+			<img src="{{ baseurl }}/play.png">
+		</div>
+		<div class="col-md-4">
+			<img src="{{ baseurl }}/play.png">
+		</div>
+	</div>
+	<div>
+		<h3>Recent Annotations</h3>
+			<ul>
+				<li>
+					<h4><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><a href="#">What is a projection?</a></h4>
+				</li>
+				<li>
+					<h4><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><a href="#">Notes 29/10/15</a></h4>
+				</li>
+			</ul>
+	</div>
+
+  	<h3>Other</h3>
+  		<ul>
+  			<li>
+  				<h4><span class="glyphicon glyphicon-link" aria-hidden="true"></span><a href="#"> Cool Video I found online</a> - Status:<span class=" glyphicon glyphicon-arrow-up" aria-hidden="true"></span></h4>
+  			</li>
+  			<li>
+  				<h4><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span><a href="#"> Notes 12/10/15</a> - Status:<span class=" glyphicon glyphicon-arrow-down" aria-hidden="true"></span> <small><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span> Comment (1)</a></small></h4>
+  			</li>
+  		</ul>
+</div>
