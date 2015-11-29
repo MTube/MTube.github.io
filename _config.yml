@@ -12,22 +12,13 @@ github_username:  MTube
 markdown: kramdown
 
 collections:
-- comp
 - math
 
 collections:
-  comp:
-    output: true
   math:
     output: true
 
 defaults:
-  -
-    scope:
-      path: ""
-      type: comp
-    values:
-      layout: page
   -
     scope:
       path: ""
